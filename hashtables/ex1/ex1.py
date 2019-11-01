@@ -12,8 +12,28 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     YOUR CODE HERE
     """
+    
+    if length == 1:
 
-    return None
+        return None
+    
+    else:
+
+        print( weights , limit )
+
+        for x in range( len( weights ) ):
+
+            for y in range( len( weights ) ):
+
+                if weights[ x ] + weights[ y ] == limit:
+
+                    if x == y:
+
+                        None
+
+                    else:
+                        
+                        return ( y , x )
 
 
 def print_answer(answer):
